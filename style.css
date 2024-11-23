@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #9ed3ff;
+}
+
+.calculadora {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.tela input {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background: #f9f9f9;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button.zero {
+    grid-column: span 2; /* Botão 0 ocupa duas colunas */
+}
+
+button:nth-child(1) {
+    background: #ff4d4d; /* Botão C vermelho */
+}
+
+button:nth-child(1):hover {
+    background: #cc0000;
+}
